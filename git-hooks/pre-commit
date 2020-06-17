@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+./gradlew lint test
+git add .
