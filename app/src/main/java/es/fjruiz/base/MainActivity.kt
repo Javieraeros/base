@@ -1,7 +1,7 @@
 package es.fjruiz.base
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import es.fjruiz.base.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {

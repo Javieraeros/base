@@ -13,8 +13,13 @@ Features
 - Jetpack libraries
 - Multimodule project
 - Gradle with kotlin dsl
-- Ktlint 
 - Git hooks
+
+Plugins
+********************
+- Git versioner https://github.com/passsy/gradle-gitVersioner-plugin
+- Gradle versioner https://github.com/ben-manes/gradle-versions-plugin
+- KtLint https://github.com/jeremymailen/kotlinter-gradle
 
 Libraries
 ********************
