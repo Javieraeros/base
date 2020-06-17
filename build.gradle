@@ -18,6 +18,7 @@ buildscript {
         // in the individual module build.gradle.kts files
     }
 }
+apply plugin: "org.jmailen.kotlinter"
 
 allprojects {
     repositories {
@@ -28,4 +29,8 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+subprojects {
+    apply plugin: "org.jmailen.kotlinter"
 }

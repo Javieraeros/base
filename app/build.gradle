@@ -5,12 +5,12 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion Config.compileSdkVersion
 
     defaultConfig {
         applicationId "es.fjruiz.base"
-        minSdkVersion 21
-        targetSdkVersion 29
+        minSdkVersion Config.minSdkVersion
+        targetSdkVersion Config.targetSdkVersion
         versionCode 1
         versionName "1.0"
 
