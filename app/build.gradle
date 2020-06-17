@@ -11,8 +11,8 @@ android {
         applicationId "es.fjruiz.base"
         minSdkVersion Config.minSdkVersion
         targetSdkVersion Config.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode gitVersioner.versionCode
+        versionName gitVersioner.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

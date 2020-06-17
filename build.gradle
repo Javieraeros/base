@@ -11,6 +11,7 @@ buildscript {
     }
     dependencies {
         classpath Dependencies.androidBuildToolGradlePlugin
+        classpath Dependencies.gitversionerPlugin
         classpath Dependencies.kotlinGradlePlugin
         classpath Dependencies.ktlintPlugin
 
@@ -19,6 +20,14 @@ buildscript {
     }
 }
 apply plugin: "org.jmailen.kotlinter"
+apply plugin: 'com.pascalwelsch.gitversioner'
+
+gitVersioner {
+    yearFactor 100
+    formatter = { gitVersioner ->
+        "1.${gitVersioner.versionCode}.${gitVersioner.featureBranchCommitCount}.${gitVersioner.currentSha1Short}"
+    }
+}
 
 allprojects {
     repositories {
