@@ -12,6 +12,7 @@ buildscript {
     dependencies {
         classpath Dependencies.androidBuildToolGradlePlugin
         classpath Dependencies.gitversionerPlugin
+        classpath Dependencies.gradleVersionsPlugin
         classpath Dependencies.kotlinGradlePlugin
         classpath Dependencies.ktlintPlugin
 
@@ -19,8 +20,10 @@ buildscript {
         // in the individual module build.gradle.kts files
     }
 }
-apply plugin: "org.jmailen.kotlinter"
+
 apply plugin: 'com.pascalwelsch.gitversioner'
+apply plugin: "com.github.ben-manes.versions"
+apply plugin: "org.jmailen.kotlinter"
 
 gitVersioner {
     yearFactor 100
